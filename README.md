@@ -22,11 +22,9 @@ The **Water Quality & BPA Prediction App** is designed to monitor water quality 
 
 ## 🖼️ Screenshots
 
-### 📊 Dashboard – Water Quality Overview
-![Dashboard](./images/dashboard.png)
-
 ### 🧪 Real-time Sensor Data
-![Sensor Data](./images/sensor_data.png)
+![Sensor Data](./images/sensor_data.png)![Uploading image.png…]()
+
 
 ### ⚗️ BPA Prediction Results
 ![BPA Prediction](./images/bpa_prediction.png)
@@ -76,9 +74,10 @@ The **Water Quality & BPA Prediction App** is designed to monitor water quality 
 
 ## 🛠️ Getting Started
 
-```bash
 git clone https://github.com/Yukivid/Water-Quality-prediction-BPA-prediction.git
 cd Water-Quality-prediction-BPA-prediction
+pip install -r requirements.txt
+python predict_bpa.py
 
 ---
 
@@ -94,5 +93,4 @@ cd Water-Quality-prediction-BPA-prediction
 ## ✨ Developed by Deepesh Raj A.Y
 
 If you found this helpful, leave a ⭐ on GitHub!
-pip install -r requirements.txt
-python predict_bpa.py
+
