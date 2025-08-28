@@ -1,31 +1,31 @@
 # 💧 Water Quality & BPA Prediction
 
-The **Water Quality & BPA Prediction App** is an IoT-enabled system designed for real-time monitoring of water parameters and Bisphenol A (BPA) contamination assessment. It integrates multiple sensors and AI models to provide accurate insights into water safety, helping communities and industries ensure healthier water consumption.
+The **Water Quality & BPA Prediction App** is designed to monitor water quality in real-time and predict the risk of Bisphenol A (BPA) contamination. It integrates IoT sensors, microcontrollers, and AI models to ensure safe water consumption by providing live insights and alerts.
 
 ---
 
 ## 🌟 Features
 
-- 🧪 **Real-time Water Quality Monitoring**  
-  Continuously measures **pH**, **TDS (Total Dissolved Solids)**, and **Turbidity** levels.  
+- 🧪 **Real-time Sensor Monitoring**  
+  Measures **pH**, **TDS (Total Dissolved Solids)**, and **Turbidity** continuously.  
 
-- ⚗️ **BPA Contamination Prediction**  
-  Uses machine learning to analyze sensor data and predict potential **BPA concentration risks**.  
+- ⚗️ **BPA Risk Prediction**  
+  Uses machine learning to predict potential BPA contamination based on sensor data.  
 
-- ☁️ **Cloud Integration**  
-  Streams sensor data to a cloud dashboard for remote access and long-term tracking.  
+- ☁️ **Cloud Dashboard**  
+  Displays live readings and BPA predictions for remote monitoring.  
 
 - 🚨 **Alerts & Notifications**  
-  Generates alerts when unsafe thresholds are detected in any parameter.  
+  Issues alerts when unsafe values or high BPA risks are detected.  
 
 ---
 
 ## 🖼️ Screenshots
 
-### 📊 Dashboard – Real-time Water Quality
+### 📊 Dashboard – Water Quality Overview
 ![Dashboard](./images/dashboard.png)
 
-### 🧪 Sensor Data Visualization
+### 🧪 Real-time Sensor Data
 ![Sensor Data](./images/sensor_data.png)
 
 ### ⚗️ BPA Prediction Results
@@ -37,30 +37,29 @@ The **Water Quality & BPA Prediction App** is an IoT-enabled system designed for
 
 | File | Description |
 |------|-------------|
-| `sensor_code.ino` | Microcontroller code for reading pH, TDS, Turbidity |
-| `predict_bpa.py` | Python script for BPA prediction |
-| `cloud_integration.py` | Handles data upload to cloud/dashboard |
+| `sensor_code.ino` | Microcontroller code for pH, TDS, Turbidity sensors |
+| `predict_bpa.py` | Machine learning model for BPA prediction |
+| `cloud_integration.py` | Cloud upload and dashboard integration |
 | `requirements.txt` | Python dependencies |
-| `README.md` | Project documentation |
+| `README.md` | Documentation |
 
 ---
 
 ## 🔍 Methodology
 
-### 1. Data Collection  
-- pH, TDS, and Turbidity sensors connected to ESP8266/Arduino.  
-- Data sampled continuously in real-time.  
+### 1. Real-time Data Collection
+- ESP8266/Arduino reads pH, TDS, and Turbidity values.  
+- Preprocesses raw sensor data for consistency.  
 
-### 2. Cloud Integration  
-- Sensor values transmitted via Wi-Fi to a cloud dashboard.  
+### 2. Data Transmission
+- Sends water quality readings to cloud dashboard via Wi-Fi.  
 
-### 3. BPA Prediction Model  
-- Machine learning model (trained using historical datasets).  
-- Predicts probability of BPA contamination given sensor metrics.  
+### 3. BPA Prediction Model
+- ML model analyzes water parameters.  
+- Predicts probability of BPA contamination.  
 
-### 4. Alerts & Dashboard  
-- Dashboard visualizes water quality trends.  
-- Alerts triggered when **unsafe thresholds** or high BPA risk detected.  
+### 4. Alerts
+- Dashboard triggers alerts if unsafe thresholds are crossed.  
 
 ---
 
@@ -82,3 +81,18 @@ git clone https://github.com/Yukivid/Water-Quality-prediction-BPA-prediction.git
 cd Water-Quality-prediction-BPA-prediction
 pip install -r requirements.txt
 python predict_bpa.py
+----
+
+🚀 Future Enhancements
+
+Support for additional sensors (chlorine, heavy metals, bacteria).
+
+-AI-based trend analysis & anomaly detection.
+-SMS/Email alerts for real-time notifications.
+-Integration with mobile dashboards.
+
+----
+
+✨ Developed by Deepesh Raj A.Y
+
+If you found this helpful, leave a ⭐ on GitHub!
