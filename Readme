@@ -1,67 +1,84 @@
-# Water Quality & BPA Prediction
+# 💧 Water Quality & BPA Prediction
 
-An IoT-enabled system for real-time monitoring and analysis of water quality parameters, enhanced with Bisphenol A (BPA) contamination assessment. By integrating multiple sensors (pH, TDS, turbidity, etc.), microcontrollers, and a cloud-based platform, this project delivers accurate, real-time insights into water quality and potential BPA risks. :contentReference[oaicite:0]{index=0}
-
----
-
-## Table of Contents
-
-- [Overview](#overview)  
-- [Features](#features)  
-- [Tech Stack](#tech-stack)  
-- [Architecture](#architecture)  
-- [Installation](#installation)  
-- [Usage](#usage)  
-- [Results](#results)  
-- [Contributing](#contributing)  
-- [License](#license)
+The **Water Quality & BPA Prediction App** is an IoT-enabled system designed for real-time monitoring of water parameters and Bisphenol A (BPA) contamination assessment. It integrates multiple sensors and AI models to provide accurate insights into water safety, helping communities and industries ensure healthier water consumption.
 
 ---
 
-## Overview
+## 🌟 Features
 
-This project enables continuous monitoring of essential water quality metrics (pH, Total Dissolved Solids, turbidity) and uses predictive modeling to assess BPA contamination levels. Ideal for smart environmental surveillance and early warning detection in water safety.
+- 🧪 **Real-time Water Quality Monitoring**  
+  Continuously measures **pH**, **TDS (Total Dissolved Solids)**, and **Turbidity** levels.  
 
----
+- ⚗️ **BPA Contamination Prediction**  
+  Uses machine learning to analyze sensor data and predict potential **BPA concentration risks**.  
 
-## Features
+- ☁️ **Cloud Integration**  
+  Streams sensor data to a cloud dashboard for remote access and long-term tracking.  
 
-- **Real-Time Sensor Monitoring**: Seamless data collection from pH, TDS, and turbidity sensors via microcontroller (e.g., ESP8266/NodeMCU).
-- **BPA Prediction & Analysis**: Applies machine learning algorithms to determine BPA concentration risk based on collected metrics.
-- **Cloud Integration**: Sensor data and BPA risk scores are transmitted to a cloud platform/dashboard for remote access and monitoring.
-- **Alerts & Dashboard**: Visualization of metrics and alerts when water quality parameters exceed safety thresholds.
-- **Modular Design**: Easily extensible with new sensor types or predictive models as needed.
-
----
-
-## Tech Stack
-
-- **Microcontroller**: ESP8266 / NodeMCU  
-- **Sensors**: pH, TDS, Turbidity (expandable)  
-- **Predictive Modeling**: (e.g., Python, Scikit-learn, any other frameworks you used)  
-- **Cloud / Dashboard Platform**: (e.g., Firebase, AWS, Azure, or custom dashboards if used)  
-- **Programming Languages**: (Arduino/C for microcontroller, Python for data processing, etc.)
-
-<small>You can fill in specific libraries or frameworks used (e.g., `pandas`, `requests`, `matplotlib`, `flask`, etc.)</small>
+- 🚨 **Alerts & Notifications**  
+  Generates alerts when unsafe thresholds are detected in any parameter.  
 
 ---
 
-## Architecture
+## 🖼️ Screenshots
 
-1. **Sensor Data Capture**: Microcontroller reads water parameters and pre-processes raw signals.  
-2. **Data Transmission**: Parameters sent to the cloud via Wi-Fi.  
-3. **BPA Prediction**: Cloud-based script/database processes the data, generates BPA risk assessment.  
-4. **Dashboard & Alerts**: Visualizes trends and triggers alerts when thresholds are crossed.
+### 📊 Dashboard – Real-time Water Quality
+![Dashboard](./images/dashboard.png)
 
-<div align="center">
-  <em>Diagram (optional): Sensor → ESP8266 → Cloud → Prediction Engine → Dashboard</em>
-</div>
+### 🧪 Sensor Data Visualization
+![Sensor Data](./images/sensor_data.png)
+
+### ⚗️ BPA Prediction Results
+![BPA Prediction](./images/bpa_prediction.png)
 
 ---
 
-## Installation
+## 📁 Project Structure
 
-1. **Clone the Repository**  
-   ```bash
-   git clone https://github.com/Yukivid/Water-Quality-prediction-BPA-prediction.git
-   cd Water-Quality-prediction-BPA-prediction
+| File | Description |
+|------|-------------|
+| `sensor_code.ino` | Microcontroller code for reading pH, TDS, Turbidity |
+| `predict_bpa.py` | Python script for BPA prediction |
+| `cloud_integration.py` | Handles data upload to cloud/dashboard |
+| `requirements.txt` | Python dependencies |
+| `README.md` | Project documentation |
+
+---
+
+## 🔍 Methodology
+
+### 1. Data Collection  
+- pH, TDS, and Turbidity sensors connected to ESP8266/Arduino.  
+- Data sampled continuously in real-time.  
+
+### 2. Cloud Integration  
+- Sensor values transmitted via Wi-Fi to a cloud dashboard.  
+
+### 3. BPA Prediction Model  
+- Machine learning model (trained using historical datasets).  
+- Predicts probability of BPA contamination given sensor metrics.  
+
+### 4. Alerts & Dashboard  
+- Dashboard visualizes water quality trends.  
+- Alerts triggered when **unsafe thresholds** or high BPA risk detected.  
+
+---
+
+## 📊 Sample Output
+
+| Parameter | Example Value | Safe Range |
+|-----------|---------------|------------|
+| pH | 6.8 | 6.5 – 8.5 |
+| TDS (ppm) | 380 | < 500 |
+| Turbidity (NTU) | 2.5 | < 5 |
+| BPA Risk | 0.72 (High) | < 0.40 |
+
+---
+
+## 🛠️ Getting Started
+
+```bash
+git clone https://github.com/Yukivid/Water-Quality-prediction-BPA-prediction.git
+cd Water-Quality-prediction-BPA-prediction
+pip install -r requirements.txt
+python predict_bpa.py
