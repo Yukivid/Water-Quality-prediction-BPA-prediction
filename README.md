@@ -24,7 +24,8 @@ The **Water Quality & BPA Prediction App** is designed to monitor water quality 
 
 
 ### 🧑‍💻 Architecture Diagram
-![Architecture](./Screenshot2025-02-17 192913.png)
+![Architecture](./83f6200e-4cce-42d1-b99c-11fd7ce6c765)
+
 
 ### 😀 Emotion Detection in Real-time
 ![Emotion Detection](./408d6b76-4b68-481b-82ce-20c05db6dbc8.png)
