@@ -74,19 +74,19 @@ The **Water Quality & BPA Prediction App** is designed to monitor water quality 
 
 ## 🛠️ Getting Started
 
-git clone https://github.com/Yukivid/Water-Quality-prediction-BPA-prediction.git
-cd Water-Quality-prediction-BPA-prediction
-pip install -r requirements.txt
-python predict_bpa.py
+- git clone https://github.com/Yukivid/Water-Quality-prediction-BPA-prediction.git
+- cd Water-Quality-prediction-BPA-prediction
+- pip install -r requirements.txt
+- python predict_bpa.py
 
 ---
 
 ## 🚀 Future Enhancements
 
--Support for additional sensors (chlorine, heavy metals, bacteria).
--AI-based trend analysis & anomaly detection.
--SMS/Email alerts for real-time notifications.
--Integration with mobile dashboards.
+- Support for additional sensors (chlorine, heavy metals, bacteria).
+- AI-based trend analysis & anomaly detection.
+- SMS/Email alerts for real-time notifications.
+- Integration with mobile dashboards.
 
 ---
 
