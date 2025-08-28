@@ -82,7 +82,7 @@ cd Water-Quality-prediction-BPA-prediction
 
 ---
 
-🚀 Future Enhancements
+## 🚀 Future Enhancements
 
 -Support for additional sensors (chlorine, heavy metals, bacteria).
 -AI-based trend analysis & anomaly detection.
@@ -91,7 +91,7 @@ cd Water-Quality-prediction-BPA-prediction
 
 ---
 
-✨ Developed by Deepesh Raj A.Y
+## ✨ Developed by Deepesh Raj A.Y
 
 If you found this helpful, leave a ⭐ on GitHub!
 pip install -r requirements.txt
